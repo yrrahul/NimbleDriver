@@ -21,7 +21,6 @@ public class Client {
             URI echoUri = new URI(destUri);
             ClientUpgradeRequest request = new ClientUpgradeRequest();
             client.connect(socket, echoUri, request);
-            System.out.printf("Connecting to : %s%n", echoUri);
             Thread.sleep(5000);
             // wait for closed socket connection.
         } catch (Throwable t) {
